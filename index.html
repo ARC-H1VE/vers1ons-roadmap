@@ -184,9 +184,12 @@
         { start: "2026-07-01", end: "2026-08-01", devUnits: 2, label: "Main Dev" },
         { start: "2026-08-01", end: "2026-08-15", devUnits: 1, label: "Wrap-up" }
       ]},
-      { id: 13, name: "Mobile Optimization", category: "core", phases: [{ start: "2026-06-30", end: "2026-09-30", devUnits: 2 }]},
+      { id: 13, name: "Mobile Optimization", category: "platform", phases: [{ start: "2026-06-30", end: "2026-09-30", devUnits: 2 }]},
       { id: 14, name: "Apply to License", category: "licensing", phases: [{ start: "2026-07-01", end: "2026-08-15", devUnits: 1 }]},
-      { id: 15, name: "Mashups", category: "core", phases: [{ start: "2026-08-15", end: "2026-11-15", devUnits: 2 }]}
+      { id: 15, name: "Mashups", category: "core", phases: [{ start: "2026-08-15", end: "2026-11-15", devUnits: 2 }]},
+      { id: 16, name: "Auctions + Contests", category: "features", phases: [{ start: "2026-06-01", end: "2026-07-27", devUnits: 1 }]},
+      { id: 17, name: "Integration with DJ Monitor", category: "platform", phases: [{ start: "2026-07-01", end: "2026-09-23", devUnits: 0.5 }]},
+      { id: 18, name: "AI Generation Provenance + Distribution", category: "core", phases: [{ start: "2026-07-16", end: "2026-10-07", devUnits: 1 }]}
     ];
 
     // Actual Data (capacity-constrained to 6 developers = ~4.8 dev units)
@@ -230,11 +233,17 @@
         { start: "2026-11-15", end: "2026-12-01", devUnits: 1, label: "Wrap-up" }
       ]},
       // Mobile pushed to Q4
-      { id: 13, name: "Mobile Optimization", category: "core", phases: [{ start: "2026-10-01", end: "2026-12-31", devUnits: 2 }]},
+      { id: 13, name: "Mobile Optimization", category: "platform", phases: [{ start: "2026-10-01", end: "2026-12-31", devUnits: 2 }]},
       // Apply to License Q4
       { id: 14, name: "Apply to License", category: "licensing", phases: [{ start: "2026-10-15", end: "2026-12-01", devUnits: 1 }]},
       // Mashups extends into 2027
-      { id: 15, name: "Mashups", category: "core", phases: [{ start: "2026-12-01", end: "2027-03-01", devUnits: 2 }]}
+      { id: 15, name: "Mashups", category: "core", phases: [{ start: "2026-12-01", end: "2027-03-01", devUnits: 2 }]},
+      // DJ Monitor integration - low overhead runs alongside other work
+      { id: 17, name: "Integration with DJ Monitor", category: "platform", phases: [{ start: "2026-08-15", end: "2026-11-07", devUnits: 0.5 }]},
+      // AI Gen Provenance - after Approvals (Oct 1) and Label Account Mode (Aug 15)
+      { id: 18, name: "AI Generation Provenance + Distribution", category: "core", phases: [{ start: "2026-10-01", end: "2026-12-24", devUnits: 1 }]},
+      // Auctions + Contests pushed to Q1 2027 due to capacity
+      { id: 16, name: "Auctions + Contests", category: "features", phases: [{ start: "2026-11-15", end: "2027-01-10", devUnits: 1 }]}
     ];
 
     // Get current features based on toggle

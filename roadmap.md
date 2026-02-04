@@ -24,16 +24,19 @@
 | 13 | Mobile Optimization | Platform | Q2-End | Q3-End | 2.5 devs |
 | 14 | "Apply to License" | Licensing | Q3-Start | Q3-Mid | 1.25 devs |
 | 15 | Mashups | Core Platform | Q3-Mid | Q4-Mid | 2.5 devs |
+| 16 | Auctions + Contests | Features | Q2-Start | Q2-End | 1.25 devs (8 wks) |
+| 17 | Integration with DJ Monitor | Platform | Q3-Start | Q3-End | 0.625 devs (12 wks) |
+| 18 | AI Generation Provenance + Distribution | Core Platform | Q3-Mid | Q4-Start | 1.25 devs (12 wks); After Approvals & Label Account Mode |
 
 ---
 
 ## Categories
 
-- **Core Platform** (Red): Major platform infrastructure (NuMeta, Royalty Splitting, Mashups)
-- **Maintenance** (Green): Ongoing support, feedback, iteration
-- **Features** (Rose): User-facing features (e-Signature, Curation, Multi-Profile, Global View, Label Accounts)
-- **Licensing** (Amber): Licensing workflows (Approvals, Bulk Licensing, Apply to License)
-- **Platform** (Teal): Cross-platform optimization
+- **Core Platform** (Blue): Major platform infrastructure (NuMeta, Royalty Splitting, Mashups, AI Generation Provenance)
+- **Maintenance** (Amber): Ongoing support, feedback, iteration
+- **Features** (Green): User-facing features (e-Signature, Curation, Multi-Profile, Global View, Label Accounts, Auctions + Contests)
+- **Licensing** (Cyan): Licensing workflows (Approvals, Bulk Licensing, Apply to License)
+- **Platform** (Slate): Cross-platform optimization (Mobile, DJ Monitor Integration)
 
 ---
 
@@ -69,6 +72,7 @@
 | Apr 22 | Label Account Mode (Phase 2) | 1 | 1.25 |
 | May 15 | Gathering Approvals (non-200% Tracks) | 1.5 | 1.875 |
 | May 15 | Bulk Licensing DRAMLA (Phase 1) | 1 | 1.25 |
+| Jun 1 | Auctions + Contests | 1 | 1.25 |
 | Jun 30 | Label Account Mode ends | - | - |
 | Jun 30 | Actual Royalty Splitting ends | - | - |
 | Jun 30 | Mobile Optimization begins | 2 | 2.50 |
@@ -80,10 +84,14 @@
 | Jul 1 | Feedback & Iteration (Phase 3) | 0.5 | 0.625 |
 | Jul 1 | Bulk Licensing DRAMLA (Phase 2) | 2 | 2.50 |
 | Jul 1 | "Apply to License" | 1 | 1.25 |
+| Jul 1 | Integration with DJ Monitor | 0.5 | 0.625 |
 | Jul 15 | Gathering Approvals ends | - | - |
+| Jul 16 | AI Generation Provenance + Distribution | 1 | 1.25 |
+| Jul 27 | Auctions + Contests ends | - | - |
 | Aug 1 | Bulk Licensing DRAMLA (Phase 3) | 1 | 1.25 |
 | Aug 15 | Mashups | 2 | 2.50 |
 | Aug 15 | Bulk Licensing DRAMLA ends | - | - |
+| Sep 23 | Integration with DJ Monitor ends | - | - |
 | Sep 30 | Mobile Optimization ends | - | - |
 
 ### Q4 2026
@@ -91,6 +99,7 @@
 | Week Starting | Feature | Dev Units | Developers |
 |---------------|---------|-----------|------------|
 | Oct 1 | Mashups continues | 2 | 2.50 |
+| Oct 7 | AI Generation Provenance + Distribution ends | - | - |
 | Nov 15 | Mashups ends | - | - |
 | Ongoing | Feedback & Iteration (Phase 3) | 0.5 | 0.625 |
 
@@ -108,6 +117,7 @@ gantt
     NuMeta Build Out (main)          :2026-02-23, 2026-04-08
     NuMeta Build Out (tail)          :2026-04-08, 2026-04-22
     Actual Royalty Splitting         :2026-04-01, 2026-06-30
+    AI Gen Provenance + Distribution :2026-07-16, 2026-10-07
     Mashups                          :2026-08-15, 2026-11-15
 
     section Maintenance
@@ -123,6 +133,7 @@ gantt
     e-Signature Flow (1x dev)        :2026-03-02, 2026-04-06
     Global View Extension            :2026-04-01, 2026-04-22
     Label Account Mode               :2026-04-15, 2026-06-30
+    Auctions + Contests              :2026-06-01, 2026-07-27
 
     section Licensing
     Approvals (non-200% Tracks)      :2026-05-15, 2026-07-15
@@ -133,6 +144,7 @@ gantt
 
     section Platform
     Mobile Optimization              :2026-06-30, 2026-09-30
+    Integration with DJ Monitor      :2026-07-01, 2026-09-23
 ```
 
 ---
@@ -151,22 +163,22 @@ gantt
 
 - **Focus**: Account Features & Financial Infrastructure
 - **Key Deliverables**: Global View, Label Account Mode, Actual Royalty Splitting, Custom e-Signature (completion)
-- **Starting**: Gathering Approvals, Bulk Licensing DRAMLA, Mobile Optimization
-- **Peak Dev Capacity**: ~10 developers
+- **Starting**: Gathering Approvals, Bulk Licensing DRAMLA, Mobile Optimization, Auctions + Contests
+- **Peak Dev Capacity**: ~11 developers
 
 ### Q3 (Jul - Sep 2026)
 
-- **Focus**: Licensing & Mobile
-- **Key Deliverables**: Bulk Licensing DRAMLA, Apply to License, Mobile Optimization, Gathering Approvals
-- **Starting**: Mashups
-- **Dev Capacity**: ~7-8 developers
+- **Focus**: Licensing, Mobile & AI Infrastructure
+- **Key Deliverables**: Bulk Licensing DRAMLA, Apply to License, Mobile Optimization, Gathering Approvals, Auctions + Contests, DJ Monitor Integration
+- **Starting**: Mashups, AI Generation Provenance + Distribution
+- **Dev Capacity**: ~9 developers
 
 ### Q4 (Oct - Dec 2026)
 
-- **Focus**: Feature Completion
-- **Key Deliverables**: Mashups (completion)
+- **Focus**: Feature Completion & AI Provenance
+- **Key Deliverables**: Mashups (completion), AI Generation Provenance + Distribution (completion)
 - **Ongoing**: Feedback & Iteration (maintenance mode)
-- **Dev Capacity**: ~3 developers
+- **Dev Capacity**: ~4 developers
 
 ---
 
@@ -298,6 +310,34 @@ gantt
         "start": "2026-08-15",
         "end": "2026-11-15",
         "devUnits": 2
+      },
+      {
+        "id": 16,
+        "name": "Auctions + Contests",
+        "category": "features",
+        "start": "2026-06-01",
+        "end": "2026-07-27",
+        "devUnits": 1,
+        "description": "Marketplace auction and contest functionality"
+      },
+      {
+        "id": 17,
+        "name": "Integration with DJ Monitor",
+        "category": "platform",
+        "start": "2026-07-01",
+        "end": "2026-09-23",
+        "devUnits": 0.5,
+        "description": "Cross-platform integration with DJ Monitor service"
+      },
+      {
+        "id": 18,
+        "name": "AI Generation Provenance + Distribution",
+        "category": "core",
+        "start": "2026-07-16",
+        "end": "2026-10-07",
+        "devUnits": 1,
+        "description": "Track AI-generated content provenance and distribution rights",
+        "dependencies": ["Approvals (non-200% Tracks)", "Label Account Mode"]
       }
     ]
   }
