@@ -193,6 +193,7 @@
     ];
 
     // Actual Data (capacity-constrained to 6 developers = ~4.8 dev units)
+    // Carefully serialized to stay under 6 devs at all times
     const actualFeatures = [
       // NuMeta starts after MVP crunch subsides
       { id: 1, name: "NuMeta Build Out", category: "core", phases: [
@@ -203,7 +204,7 @@
       { id: 2, name: "Feedback & Iteration", category: "maintenance", phases: [
         { start: "2026-02-09", end: "2026-03-15", devUnits: 2, label: "MVP Support" },
         { start: "2026-03-15", end: "2026-07-01", devUnits: 1, label: "Standard" },
-        { start: "2026-07-01", end: "2026-12-31", devUnits: 0.5, label: "Maintenance" }
+        { start: "2026-07-01", end: "2027-03-31", devUnits: 0.5, label: "Maintenance" }
       ]},
       // Pre-MVP work starts Feb 1
       { id: 3, name: "Invite System", category: "core", phases: [{ start: "2026-02-01", end: "2026-03-31", devUnits: 1 }]},
@@ -224,26 +225,26 @@
       ]},
       // Royalty Splitting serialized in Q2-Q3
       { id: 10, name: "Actual Royalty Splitting", category: "core", phases: [{ start: "2026-06-01", end: "2026-08-31", devUnits: 2 }]},
-      // Approvals pushed to Q3
+      // Approvals in Q3
       { id: 11, name: "Approvals (non-200% Tracks)", category: "licensing", phases: [{ start: "2026-08-01", end: "2026-10-01", devUnits: 1.5 }]},
-      // Bulk Licensing pushed to Q3-Q4
+      // DJ Monitor integration - low overhead, Q3
+      { id: 17, name: "Integration with DJ Monitor", category: "platform", phases: [{ start: "2026-08-15", end: "2026-11-07", devUnits: 0.5 }]},
+      // Bulk Licensing Q3-Q4, serialized with other work
       { id: 12, name: "Bulk Licensing DRAMLA", category: "licensing", phases: [
         { start: "2026-09-01", end: "2026-10-15", devUnits: 1, label: "Initial" },
         { start: "2026-10-15", end: "2026-11-15", devUnits: 2, label: "Main Dev" },
         { start: "2026-11-15", end: "2026-12-01", devUnits: 1, label: "Wrap-up" }
       ]},
-      // Mobile pushed to Q4
-      { id: 13, name: "Mobile Optimization", category: "platform", phases: [{ start: "2026-10-01", end: "2026-12-31", devUnits: 2 }]},
-      // Apply to License Q4
-      { id: 14, name: "Apply to License", category: "licensing", phases: [{ start: "2026-10-15", end: "2026-12-01", devUnits: 1 }]},
-      // Mashups extends into 2027
-      { id: 15, name: "Mashups", category: "core", phases: [{ start: "2026-12-01", end: "2027-03-01", devUnits: 2 }]},
-      // DJ Monitor integration - low overhead runs alongside other work
-      { id: 17, name: "Integration with DJ Monitor", category: "platform", phases: [{ start: "2026-08-15", end: "2026-11-07", devUnits: 0.5 }]},
-      // AI Gen Provenance - after Approvals (Oct 1) and Label Account Mode (Aug 15)
-      { id: 18, name: "AI Generation Provenance + Distribution", category: "core", phases: [{ start: "2026-10-01", end: "2026-12-24", devUnits: 1 }]},
-      // Auctions + Contests pushed to Q1 2027 due to capacity
-      { id: 16, name: "Auctions + Contests", category: "features", phases: [{ start: "2026-11-15", end: "2027-01-10", devUnits: 1 }]}
+      // Apply to License - moved earlier, ends before Mobile ramps up
+      { id: 14, name: "Apply to License", category: "licensing", phases: [{ start: "2026-09-15", end: "2026-11-01", devUnits: 1 }]},
+      // AI Gen Provenance - after Approvals ends, serialized
+      { id: 18, name: "AI Generation Provenance + Distribution", category: "core", phases: [{ start: "2026-10-15", end: "2027-01-07", devUnits: 1 }]},
+      // Mobile pushed to late Q4, extends into Q1 2027
+      { id: 13, name: "Mobile Optimization", category: "platform", phases: [{ start: "2026-12-01", end: "2027-02-28", devUnits: 2 }]},
+      // Mashups starts Q1 2027 after other major work completes
+      { id: 15, name: "Mashups", category: "core", phases: [{ start: "2027-01-15", end: "2027-04-15", devUnits: 2 }]},
+      // Auctions + Contests Q1-Q2 2027
+      { id: 16, name: "Auctions + Contests", category: "features", phases: [{ start: "2027-03-01", end: "2027-04-26", devUnits: 1 }]}
     ];
 
     // Get current features based on toggle
