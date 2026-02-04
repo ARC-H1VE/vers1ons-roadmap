@@ -12,9 +12,9 @@
 |----|---------|----------|-------|-----|--------|
 | 1 | NuMeta Build Out | Core Platform | Feb 23 | Q2-Start + 3wks | Phase 1: 2.5 devs → Apr 8; Phase 2: 0.625 devs (2 wks tail) |
 | 2 | Feedback & Iteration (MVP Launch Support) | Maintenance | Feb 9 | Ongoing | Phase 1: 3.75 devs (Feb 9 → Mid-Mar); Phase 2: 1.25 devs (Mid-Mar → Q3-Start); Phase 3: 0.625 devs (Q3+ indefinitely) |
-| 3 | Invite System | Core Platform | Q1-Start | End of March | 1.25 devs |
-| 4 | On-platform Curation | Features | Q1-Start | End of March | 1.25 devs |
-| 5 | Custom e-Signature Flow | Features | Feb 16 | Apr 6 | Phase 1: 2.5 devs (2 wks); Phase 2: 1.25 devs (5 wks) |
+| 3 | Invite System | Core Platform | Feb 1 | End of March | 1.25 devs |
+| 4 | On-platform Curation | Features | Feb 1 | End of March | 1.25 devs |
+| 5 | Custom e-Signature Flow | Features | Feb 16 | Apr 20 | Phase 1: 2.5 devs (2 wks); Phase 2: 1.25 devs (7 wks) |
 | 6 | Multi-Profile Account Experience | Features | Q1-Mid | Q2-Start | 1.25 devs |
 | 7 | Global View (Multi-Profile Extension) | Features | Q2-Start | Q2-Start + 3wks | 1.25 devs (tail-end refinement) |
 | 8 | Label Account Mode | Features | Q2 Early-Mid | Q2-End | Phase 1: 2.5 devs (1 wk); Phase 2: 1.25 devs (4 wks) |
@@ -46,8 +46,8 @@
 
 | Week Starting | Feature | Dev Units | Developers |
 |---------------|---------|-----------|------------|
-| Jan 6 | Invite System | 1 | 1.25 |
-| Jan 6 | On-platform Curation | 1 | 1.25 |
+| Feb 1 | Invite System | 1 | 1.25 |
+| Feb 1 | On-platform Curation | 1 | 1.25 |
 | Feb 9 | **MVP LAUNCH** | - | - |
 | Feb 9 | Feedback & Iteration (Phase 1) | 3 | 3.75 |
 | Feb 15 | Multi-Profile Account Experience | 1 | 1.25 |
@@ -65,7 +65,7 @@
 | Apr 1 | Multi-Profile Account Experience ends | - | - |
 | Apr 1 | Global View (Multi-Profile Extension) | 1 | 1.25 |
 | Apr 1 | Actual Royalty Splitting | 2 | 2.50 |
-| Apr 6 | Custom e-Signature Flow ends | - | - |
+| Apr 20 | Custom e-Signature Flow ends | - | - |
 | Apr 8 | NuMeta Build Out (Phase 2 - tail) | 0.5 | 0.625 |
 | Apr 15 | Label Account Mode (Phase 1) | 2 | 2.50 |
 | Apr 22 | NuMeta Build Out ends | - | - |
@@ -113,7 +113,7 @@ gantt
     dateFormat YYYY-MM-DD
 
     section Core Platform
-    Invite System                    :2026-01-06, 2026-03-31
+    Invite System                    :2026-02-01, 2026-03-31
     NuMeta Build Out (main)          :2026-02-23, 2026-04-08
     NuMeta Build Out (tail)          :2026-04-08, 2026-04-22
     Actual Royalty Splitting         :2026-04-01, 2026-06-30
@@ -127,10 +127,10 @@ gantt
     Feedback & Iteration (0.5x dev)  :2026-07-01, 2026-12-31
 
     section Features
-    On-platform Curation             :2026-01-06, 2026-03-31
+    On-platform Curation             :2026-02-01, 2026-03-31
     Multi-Profile Account Experience :2026-02-15, 2026-04-01
     e-Signature Flow (2x dev)        :2026-02-16, 2026-03-02
-    e-Signature Flow (1x dev)        :2026-03-02, 2026-04-06
+    e-Signature Flow (1x dev)        :2026-03-02, 2026-04-20
     Global View Extension            :2026-04-01, 2026-04-22
     Label Account Mode               :2026-04-15, 2026-06-30
     Auctions + Contests              :2026-06-01, 2026-07-27
@@ -214,7 +214,7 @@ gantt
         "id": 3,
         "name": "Invite System",
         "category": "core",
-        "start": "2026-01-06",
+        "start": "2026-02-01",
         "end": "2026-03-31",
         "devUnits": 1
       },
@@ -222,7 +222,7 @@ gantt
         "id": 4,
         "name": "On-platform Curation",
         "category": "features",
-        "start": "2026-01-06",
+        "start": "2026-02-01",
         "end": "2026-03-31",
         "devUnits": 1
       },
@@ -232,7 +232,7 @@ gantt
         "category": "features",
         "phases": [
           { "start": "2026-02-16", "end": "2026-03-02", "devUnits": 2, "description": "Initial build" },
-          { "start": "2026-03-02", "end": "2026-04-06", "devUnits": 1, "description": "Completion" }
+          { "start": "2026-03-02", "end": "2026-04-20", "devUnits": 1, "description": "Completion" }
         ]
       },
       {
