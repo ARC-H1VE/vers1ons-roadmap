@@ -26,7 +26,9 @@
 | 15 | Mashups | Core Platform | Q3-Mid | Q4-Mid | 2.5 devs |
 | 16 | Auctions + Contests | Features | Q2-Start | Q2-End | 1.25 devs (8 wks) |
 | 17 | Integration with DJ Monitor | Platform | Q3-Start | Q3-End | 0.625 devs (12 wks) |
-| 18 | AI Generation Provenance + Distribution | Core Platform | Q3-Mid | Q4-Start | 1.25 devs (12 wks); After Approvals & Label Account Mode |
+| 18 | AI Generation Provenance + Distribution | Core Platform | Q3-Mid | Q4-Start | 1.5 devs (12 wks); After Approvals & Label Account Mode |
+| 19 | Vers1ons Desktop App | Platform | Q4 2026 | Q1 2027 | 3.75 devs (2 months, 2.5 units) |
+| 20 | Logic VST Bridge | Platform | Q1 2027 | Q1 2027 | 2.25 devs (1 month, 1.5 units); After Desktop App |
 
 ---
 
@@ -145,6 +147,8 @@ gantt
     section Platform
     Mobile Optimization              :2026-06-30, 2026-09-30
     Integration with DJ Monitor      :2026-07-01, 2026-09-23
+    Vers1ons Desktop App             :2026-11-01, 2027-01-01
+    Logic VST Bridge                 :2027-01-01, 2027-02-01
 ```
 
 ---
@@ -338,6 +342,25 @@ gantt
         "devUnits": 1,
         "description": "Track AI-generated content provenance and distribution rights",
         "dependencies": ["Approvals (non-200% Tracks)", "Label Account Mode"]
+      },
+      {
+        "id": 19,
+        "name": "Vers1ons Desktop App",
+        "category": "platform",
+        "start": "2026-11-01",
+        "end": "2027-01-01",
+        "devUnits": 2.5,
+        "description": "Native desktop application for Vers1ons"
+      },
+      {
+        "id": 20,
+        "name": "Logic VST Bridge",
+        "category": "platform",
+        "start": "2027-01-01",
+        "end": "2027-02-01",
+        "devUnits": 1.5,
+        "description": "Integration bridge for Logic Pro VST workflow",
+        "dependencies": ["Vers1ons Desktop App"]
       }
     ]
   }

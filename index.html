@@ -188,7 +188,9 @@
       { id: 15, name: "Mashups", category: "core", phases: [{ start: "2026-08-15", end: "2026-11-15", devUnits: 2 }]},
       { id: 16, name: "Auctions + Contests", category: "features", phases: [{ start: "2026-06-01", end: "2026-07-27", devUnits: 1 }]},
       { id: 17, name: "Integration with DJ Monitor", category: "platform", phases: [{ start: "2026-07-01", end: "2026-09-23", devUnits: 0.5 }]},
-      { id: 18, name: "AI Generation Provenance + Distribution", category: "core", phases: [{ start: "2026-07-16", end: "2026-10-07", devUnits: 1 }]}
+      { id: 18, name: "AI Generation Provenance + Distribution", category: "core", phases: [{ start: "2026-07-16", end: "2026-10-07", devUnits: 1 }]},
+      { id: 19, name: "Vers1ons Desktop App", category: "platform", phases: [{ start: "2026-11-01", end: "2027-01-01", devUnits: 2.5 }]},
+      { id: 20, name: "Logic VST Bridge", category: "platform", phases: [{ start: "2027-01-01", end: "2027-02-01", devUnits: 1.5 }]}
     ];
 
     // Actual Data (capacity-constrained to 6 developers = ~4.8 dev units)
@@ -203,7 +205,7 @@
       { id: 2, name: "Feedback & Iteration", category: "maintenance", phases: [
         { start: "2026-02-09", end: "2026-03-15", devUnits: 2, label: "MVP Support" },
         { start: "2026-03-15", end: "2026-07-01", devUnits: 1, label: "Standard" },
-        { start: "2026-07-01", end: "2027-03-31", devUnits: 0.5, label: "Maintenance" }
+        { start: "2026-07-01", end: "2027-07-31", devUnits: 0.5, label: "Maintenance" }
       ]},
       // Pre-MVP work starts Feb 1
       { id: 3, name: "Invite System", category: "core", phases: [{ start: "2026-02-01", end: "2026-03-31", devUnits: 1 }]},
@@ -243,7 +245,11 @@
       // Mashups starts Q1 2027 after other major work completes
       { id: 15, name: "Mashups", category: "core", phases: [{ start: "2027-01-15", end: "2027-04-15", devUnits: 2 }]},
       // Auctions + Contests Q1-Q2 2027
-      { id: 16, name: "Auctions + Contests", category: "features", phases: [{ start: "2027-03-01", end: "2027-04-26", devUnits: 1 }]}
+      { id: 16, name: "Auctions + Contests", category: "features", phases: [{ start: "2027-03-01", end: "2027-04-26", devUnits: 1 }]},
+      // Desktop App after Mashups winds down
+      { id: 19, name: "Vers1ons Desktop App", category: "platform", phases: [{ start: "2027-04-15", end: "2027-06-15", devUnits: 2.5 }]},
+      // Logic VST Bridge follows Desktop App
+      { id: 20, name: "Logic VST Bridge", category: "platform", phases: [{ start: "2027-06-15", end: "2027-07-15", devUnits: 1.5 }]}
     ];
 
     // Get current features based on toggle
