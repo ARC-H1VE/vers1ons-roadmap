@@ -1,6 +1,6 @@
 # Product Roadmap Timeline
 
-> **Developer Unit**: 1 height unit = 1.25 developers
+> **Developer Unit**: 1 dev unit = 1.5 developers
 > **Timeline**: Q1 2026 - Q4 2026
 > **MVP Launch**: February 9, 2026
 
@@ -188,7 +188,7 @@ gantt
 {
   "roadmap": {
     "year": 2026,
-    "devUnitMultiplier": 1.25,
+    "devUnitMultiplier": 1.5,
     "mvpLaunch": "2026-02-09",
     "features": [
       {

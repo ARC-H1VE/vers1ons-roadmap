@@ -20,21 +20,21 @@ This folder contains a product roadmap tracking system with a markdown data stor
 A **dev unit** is the standard measure of developer effort:
 
 ```
-1 dev unit = 1.25 developers
+1 dev unit = 1.5 developers
 ```
 
-This allows fractional allocation (e.g., 0.5 units = 0.625 developers for part-time/support work).
+This allows fractional allocation (e.g., 0.5 units = 0.75 developers for part-time/support work).
 
 **Common allocations:**
-- `0.5 units` = 0.625 devs — Tail-end support, maintenance mode
-- `1 unit` = 1.25 devs — Standard single-track work
-- `1.5 units` = 1.875 devs — Medium complexity
-- `2 units` = 2.5 devs — Full team focus
-- `3 units` = 3.75 devs — High-intensity sprint (e.g., MVP launch support)
+- `0.5 units` = 0.75 devs — Tail-end support, maintenance mode
+- `1 unit` = 1.5 devs — Standard single-track work
+- `1.5 units` = 2.25 devs — Medium complexity
+- `2 units` = 3 devs — Full team focus
+- `3 units` = 4.5 devs — High-intensity sprint (e.g., MVP launch support)
 
 ### Capacity Constraint
 
-The team operates with an **average velocity of 6 developers**. This translates to approximately **4.8 dev units** of parallel capacity at any given time.
+The team operates with an **average velocity of 6 developers**. This translates to approximately **4 dev units** of parallel capacity at any given time.
 
 The visualization includes:
 - **Red dashed capacity line** at 6 devs on the resource chart
