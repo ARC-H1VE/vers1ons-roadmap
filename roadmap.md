@@ -29,6 +29,7 @@
 | 18 | AI Generation Provenance + Distribution | Core Platform | Q3-Mid | Q4-Start | 1.5 devs (12 wks); After Approvals & Label Account Mode |
 | 19 | Vers1ons Desktop App | Platform | Q4 2026 | Q1 2027 | 3.75 devs (2 months, 2.5 units) |
 | 20 | Logic VST Bridge | Platform | Q1 2027 | Q1 2027 | 2.25 devs (1 month, 1.5 units); After Desktop App |
+| 21 | Automated Publishing | Core Platform | Q4 2026 | Q1 2027 | 2.25 devs (3 months, 1.5 units) |
 
 ---
 
@@ -121,6 +122,7 @@ gantt
     Actual Royalty Splitting         :2026-04-01, 2026-06-30
     AI Gen Provenance + Distribution :2026-07-16, 2026-10-07
     Mashups                          :2026-08-15, 2026-11-15
+    Automated Publishing             :2026-10-01, 2027-01-01
 
     section Maintenance
     MVP Launch                       :milestone, 2026-02-09, 0d
@@ -361,6 +363,15 @@ gantt
         "devUnits": 1.5,
         "description": "Integration bridge for Logic Pro VST workflow",
         "dependencies": ["Vers1ons Desktop App"]
+      },
+      {
+        "id": 21,
+        "name": "Automated Publishing",
+        "category": "core",
+        "start": "2026-10-01",
+        "end": "2027-01-01",
+        "devUnits": 1.5,
+        "description": "Automated content publishing pipeline"
       }
     ]
   }
