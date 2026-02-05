@@ -191,7 +191,11 @@
       { id: 18, name: "AI Generation Provenance + Distribution", category: "core", phases: [{ start: "2026-07-16", end: "2026-10-07", devUnits: 1 }]},
       { id: 19, name: "Vers1ons Desktop App", category: "platform", phases: [{ start: "2026-11-01", end: "2027-01-01", devUnits: 2.5 }]},
       { id: 20, name: "Logic VST Bridge", category: "platform", phases: [{ start: "2027-01-01", end: "2027-02-01", devUnits: 1.5 }]},
-      { id: 21, name: "Automated Publishing", category: "core", phases: [{ start: "2026-10-01", end: "2027-01-01", devUnits: 1.5 }]}
+      { id: 21, name: "Automated Publishing", category: "core", phases: [{ start: "2026-10-01", end: "2027-01-01", devUnits: 1.5 }]},
+      { id: 22, name: "Marketing Builds", category: "features", phases: [
+        { start: "2026-03-01", end: "2026-05-01", devUnits: 1.5, label: "Main" },
+        { start: "2026-05-01", end: "2026-06-01", devUnits: 1, label: "Wind-down" }
+      ]}
     ];
 
     // Actual Data (capacity-constrained to 6 developers = 4 dev units with 1.5x multiplier)
@@ -206,7 +210,7 @@
       { id: 2, name: "Feedback & Iteration", category: "maintenance", phases: [
         { start: "2026-02-09", end: "2026-03-15", devUnits: 2, label: "MVP Support" },
         { start: "2026-03-15", end: "2026-07-01", devUnits: 1, label: "Standard" },
-        { start: "2026-07-01", end: "2027-09-30", devUnits: 0.5, label: "Maintenance" }
+        { start: "2026-07-01", end: "2027-12-31", devUnits: 0.5, label: "Maintenance" }
       ]},
       // Pre-MVP work starts Feb 1
       { id: 3, name: "Invite System", category: "core", phases: [{ start: "2026-02-01", end: "2026-03-31", devUnits: 1 }]},
@@ -252,7 +256,12 @@
       // Desktop App after other work winds down
       { id: 19, name: "Vers1ons Desktop App", category: "platform", phases: [{ start: "2027-06-15", end: "2027-08-15", devUnits: 2.5 }]},
       // Logic VST Bridge follows Desktop App
-      { id: 20, name: "Logic VST Bridge", category: "platform", phases: [{ start: "2027-08-15", end: "2027-09-15", devUnits: 1.5 }]}
+      { id: 20, name: "Logic VST Bridge", category: "platform", phases: [{ start: "2027-08-15", end: "2027-09-15", devUnits: 1.5 }]},
+      // Marketing Builds after platform work completes
+      { id: 22, name: "Marketing Builds", category: "features", phases: [
+        { start: "2027-09-15", end: "2027-11-15", devUnits: 1.5, label: "Main" },
+        { start: "2027-11-15", end: "2027-12-15", devUnits: 1, label: "Wind-down" }
+      ]}
     ];
 
     // Get current features based on toggle

@@ -30,6 +30,7 @@
 | 19 | Vers1ons Desktop App | Platform | Q4 2026 | Q1 2027 | 3.75 devs (2 months, 2.5 units) |
 | 20 | Logic VST Bridge | Platform | Q1 2027 | Q1 2027 | 2.25 devs (1 month, 1.5 units); After Desktop App |
 | 21 | Automated Publishing | Core Platform | Q4 2026 | Q1 2027 | 2.25 devs (3 months, 1.5 units) |
+| 22 | Marketing Builds | Features | Mar 1 | Jun 1 | Phase 1: 2.25 devs (2 mo, 1.5 units); Phase 2: 1.5 devs (1 mo, 1 unit) |
 
 ---
 
@@ -138,6 +139,8 @@ gantt
     Global View Extension            :2026-04-01, 2026-04-22
     Label Account Mode               :2026-04-15, 2026-06-30
     Auctions + Contests              :2026-06-01, 2026-07-27
+    Marketing Builds (main)          :2026-03-01, 2026-05-01
+    Marketing Builds (wind-down)     :2026-05-01, 2026-06-01
 
     section Licensing
     Approvals (non-200% Tracks)      :2026-05-15, 2026-07-15
@@ -372,6 +375,15 @@ gantt
         "end": "2027-01-01",
         "devUnits": 1.5,
         "description": "Automated content publishing pipeline"
+      },
+      {
+        "id": 22,
+        "name": "Marketing Builds",
+        "category": "features",
+        "phases": [
+          { "start": "2026-03-01", "end": "2026-05-01", "devUnits": 1.5, "description": "Main development" },
+          { "start": "2026-05-01", "end": "2026-06-01", "devUnits": 1, "description": "Wind-down" }
+        ]
       }
     ]
   }
